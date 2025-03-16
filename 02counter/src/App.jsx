@@ -6,13 +6,26 @@ import './App.css'
 function App() {
     let [counter,setCounter] = useState(15);
 
-   const addvalue = ()=>{
-    console.log("value added",counter);
-    counter = counter+1;
-    if(counter > 20){
-      counter = 20;
-    }
-    setCounter(counter);
+  //  const addvalue = ()=>{
+  //   console.log("value added",counter);
+  //   counter = counter+1;
+  //   if(counter > 20){
+  //     counter = 20;
+  //   }
+  //   setCounter(counter);
+  //  }
+  // const addvalue = ()=>{
+  //   setCounter(counter+1);
+  //   setCounter(counter+1);
+  //   setCounter(counter+1);
+  //   setCounter(counter+1);
+  //  }
+
+  const addvalue = ()=>{
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
    }
 
    const removevalue = ()=>{
